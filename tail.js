@@ -18,6 +18,8 @@ const tail = function(array) {
 
 let test = [1, 2, 3, 4, 5];
 console.log(tail(test));
+assertEqual(tail(test)[0], test[1])
 console.log(test);
-console.log(tail([]))
+assertEqual(tail([]).length, 0)
+assertEqual(tail(["test"]).length, 0)
 assertEqual(test.length, 5)
