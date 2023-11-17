@@ -68,3 +68,6 @@ console.log(without(primeNumbers, [4, 6, 8, 9, 10]));
 const numbers = [1, 2, 4, 4, 5, 6, 4, 7];
 console.log(without(numbers, [4, 6, 8, 9]));
 console.log(without([1, 2, 3], [1]));
+
+assertArraysEqual(without([1, 2, 3], [1]), [2, 3]); // => should PASS
+assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"]), ["1", "2"]); // => should PASS
