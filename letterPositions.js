@@ -27,17 +27,19 @@ const letterPositions = function(sentence) {
 
   for (let i = 0; i < sentenceArray.length; i++) {
     const letter = sentenceArray[i];
-    if (results[letter]) {
-      results[letter].push(i);
-    } else {
-      results[letter] = [i];
+    if (letter !== " ") {
+      if (results[letter]) {
+        results[letter].push(i);
+      } else {
+        results[letter] = [i];
+      }
     }
   }
   return results;
 };
 
 
-const result1 = letterPositions("hello");
+const result1 = letterPositions("hello jim");
 console.log(result1);
 assertArraysEqual(result1["h"], [0]);
 assertArraysEqual(result1["e"], [1]);
