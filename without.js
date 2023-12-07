@@ -33,8 +33,8 @@ const assertArraysEqual = function(arr1, arr2) {
   }
 };
 
-// without function removes items from an array. this is done by having an independant 
-//varible(shouldRemove) set for each value of the source array. Changing the boolean of 
+// without function removes items from an array. this is done by having an independant
+//varible(shouldRemove) set for each value of the source array. Changing the boolean of
 //shouldRemove triggers the removal of it(rather it simply doesn't add it) from the new array.
 
 const without = function(source, itemsToRemove) {

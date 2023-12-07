@@ -24,19 +24,19 @@ const assertArraysEqual = function(arr1, arr2) {
 
 
 
-const map = function (array, callback){
- const results = [];
+const map = function(array, callback) {
+  const results = [];
 
- for (let item of array) {
-results.push(callback(item));
-}
+  for (let item of array) {
+    results.push(callback(item));
+  }
 
- return results;
-}
+  return results;
+};
 
 const words = ["ground", "control", "to"];
 
 const results1 = map(words, word => word[0]);
 console.log(results1);
 
-assertArraysEqual((map(words, word => word + ' :--)')), ["ground :--)", "control :--)", "to :--)"])
+assertArraysEqual((map(words, word => word + ' :--)')), ["ground :--)", "control :--)", "to :--)"]);

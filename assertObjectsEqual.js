@@ -34,19 +34,19 @@ const eqObjects = function(object1, object2) {
   return true;
 };
 
-const assertObjectsEqual = function(obj1, obj2){
+const assertObjectsEqual = function(obj1, obj2) {
   const inspect = require('util').inspect;
 
-  if (eqObjects(obj1, obj2)){
-    console.log(`👨‍🌾💚🤑 Assertion Passed: ${inspect(obj1)} === ${inspect(obj2)}`)
-  }else{
-    console.log(`🍟💂‍♀️🚚 Assertion Failed: ${inspect(obj1)} !== ${inspect(obj2)}`)
+  if (eqObjects(obj1, obj2)) {
+    console.log(`👨‍🌾💚🤑 Assertion Passed: ${inspect(obj1)} === ${inspect(obj2)}`);
+  } else {
+    console.log(`🍟💂‍♀️🚚 Assertion Failed: ${inspect(obj1)} !== ${inspect(obj2)}`);
   }
 
-}
+};
 const shirtObject = { color: "red", size: "medium" };
 const anotherShirtObject = { size: "medium", color: "red" };
 const longSleeveShirtObject = { size: "medium", color: "red", sleeveLength: "long" };
 
 assertObjectsEqual(shirtObject, anotherShirtObject);
-assertObjectsEqual(shirtObject, longSleeveShirtObject)
+assertObjectsEqual(shirtObject, longSleeveShirtObject);

@@ -3,4 +3,4 @@ const tail = function(array) {
   return tailArray;
 };
 
-module.exports = tail
+module.exports = tail;
