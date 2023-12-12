@@ -17,10 +17,5 @@ const countLetters = function(stringToCount) {
   return result;
 };
 
-// const results1 = countLetters("one two three four");
-// console.log(countLetters("Helloh"));
-// assertEqual(results1["o"], 3);
-// assertEqual(results1.t, 2);
-// console.log(results1);
 
 module.exports = countLetters;
